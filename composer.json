@@ -1,0 +1,16 @@
+{
+	"name": "vbridier/smarty-gettext",
+	"description": "Gettext plugin enabling internationalization in Smarty Package files",
+	"autoload": {
+		"files": [
+			"block.t.php",
+			"function.locale.php"
+		]
+	},
+	"bin": ["tsmarty2c.php"],
+	"require": {
+		"ext-gettext": "*",
+		"ext-pcre": "*",
+		"php": ">=5.2.1"
+	}
+}
