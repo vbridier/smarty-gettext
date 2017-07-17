@@ -1,5 +1,5 @@
 {
-	"name": "vbridier/smarty-gettext",
+	"name": "vbridier/zf2-smarty-gettext",
 	"description": "Gettext plugin enabling internationalization in Smarty Package files",
 	"autoload": {
 		"files": [
