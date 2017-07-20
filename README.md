@@ -1,14 +1,7 @@
-**Gettext support for Smarty2/Smarty3**
-=======================================
+**Gettext support for Smarty2/Smarty3 with ZF2**
+===============================================
 
-[![License](https://poser.pugx.org/smarty-gettext/smarty-gettext/license.png)](https://packagist.org/packages/smarty-gettext/smarty-gettext)
-[![Build Status](https://travis-ci.org/smarty-gettext/smarty-gettext.png?branch=master)](http://travis-ci.org/smarty-gettext/smarty-gettext)
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/smarty-gettext/smarty-gettext/badges/quality-score.png?s=bd7a2c6199136bdf056ceb095d93602cc28d5d73)](https://scrutinizer-ci.com/g/smarty-gettext/smarty-gettext/)
-[![Latest Stable Version](https://poser.pugx.org/smarty-gettext/smarty-gettext/v/stable.png)](https://packagist.org/packages/smarty-gettext/smarty-gettext)
-[![Total Downloads](https://poser.pugx.org/smarty-gettext/smarty-gettext/downloads.png)](https://packagist.org/packages/smarty-gettext/smarty-gettext)
-[![Latest Unstable Version](https://poser.pugx.org/smarty-gettext/smarty-gettext/v/unstable.png)](https://packagist.org/packages/smarty-gettext/smarty-gettext)
-
-[smarty-gettext][1] provides gettext (i18n) support for [Smarty][2], the popular PHP templating engine, to implement an NLS (Native Language Support) API which can be used to internationalize and translate your PHP applications.
+[zf2-smarty-gettext][1] provides gettext (i18n) support for [Smarty][2] with Zend Framework 2, the popular PHP templating engine, to implement an NLS (Native Language Support) API which can be used to internationalize and translate your PHP applications.
 
 This README assumes that you already know what is [gettext][3] and how to
 use it with PHP.
@@ -18,10 +11,6 @@ use this package:
 
  2. http://www.php.net/gettext
  3. http://www.onlamp.com/pub/a/php/2002/06/13/php.html
-
-If you encounter problems when using the native [gettext][4] extension,
-you may want to try the [php-gettext][5] module, which emulates the behavior
-of the C extension, but is written in pure PHP.
 
 This package has two parts:
 
@@ -34,15 +23,11 @@ This package has two parts:
 
 With Composer:
 
-- Add the `"smarty-gettext/smarty-gettext": "~1.1.1"` into the `require` section of your `composer.json`:
+- Add the `"vbridier/zf2-smarty-gettext": "1.0.0"` into the `require` section of your `composer.json`:
 ```
-composer require smarty-gettext/smarty-gettext=~1.1.1
+composer require vbridier/zf2-smarty-gettext=1.0.0
 ```
 - Run `composer install`.
-
-Manually:
-
-- Simply copy `block.t.php` and `function.locale.php` to your Smarty plugins directory.
 
 **function.locale.php**
 -----------------------
@@ -173,32 +158,12 @@ See how it's done in [Eventum](https://github.com/eventum/eventum/blob/master/lo
 **Authors**
 -----------
 
+ - This ZF2 Plugin: Vincent BRIDIER <vincent@bridier.me>
  - Original Author: Sagi Bashari <sagi@boom.org.il>, http://smarty-gettext.sourceforge.net/
  - Current maintainer: Elan Ruusamäe <glen@delfi.ee>
 
-**Copyright**
--------------
-
-Copyright (c) 2004-2005 Sagi Bashari <br>
-Copyright (c) 2010-2015 Elan Ruusamäe
-
-This library is free software; you can redistribute it and/or
-modify it under the terms of the GNU Lesser General Public
-License as published by the Free Software Foundation; either
-version 2.1 of the License, or (at your option) any later version.
-
-This library is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-Lesser General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public
-License along with this library; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-
-  [1]: https://github.com/smarty-gettext/smarty-gettext
+  [1]: https://github.com/vbridier/zf2-smarty-gettext
   [2]: http://www.smarty.net/
   [3]: https://www.gnu.org/software/gettext/
   [4]: http://php.net/manual/en/book.gettext.php
-  [5]: https://launchpad.net/php-gettext/
   [6]: http://php.net/manual/en/function.sprintf.php
